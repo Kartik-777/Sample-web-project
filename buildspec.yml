@@ -10,10 +10,6 @@ phases:
     commands:
       - echo "Copying index.html to Nginx directory..."
       - sudo cp index.html /var/www/html
-  post_build:
-    commands:
-      - echo "Configuring Nginx..."
-      - sudo systemctl restart nginx
 
 artifacts:
   files:
