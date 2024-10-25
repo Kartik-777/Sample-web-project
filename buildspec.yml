@@ -13,8 +13,8 @@ phases:
   post_build:
     commands:
       - echo "Configuring Nginx..."
-      - sudo cp nginx.conf /etc/nginx/sites-available/default
-      - sudo systemctl restart nginx
+      # - sudo cp nginx.conf /etc/nginx/sites-available/default
+      # - sudo systemctl restart nginx
 
 artifacts:
   files:
